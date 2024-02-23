@@ -49,6 +49,11 @@ const SingleProduct = () => {
 
 
   const wishListHandler = async () => {
+
+    if(!user){
+      console.log("Please log in before add to wishlist")
+      setCartError("Please log in before add to wishlist")
+    }
     console.log(product)
 
     const isProductInWishlist = wishlist.find(item => item.bagName === product.bagName && user?.user._id === item?.user_id);
