@@ -235,7 +235,7 @@ const SingleProduct = () => {
                         <div className="swiper-wrapper">
                           <div className="swiper-slide">
                             <img
-                              src={`http://localhost:5000/Images/${product.image}`}
+                              src={`https://fs105-main.onrender.com/Images/${product.image}`}
                               alt={product.bagName}
                             />
                           </div>
