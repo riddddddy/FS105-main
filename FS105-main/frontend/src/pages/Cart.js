@@ -245,7 +245,7 @@ const Cart = () => {
                                             <React.Fragment key={`${index}`}>
                                                 <li className="flex flex-col justify-center items-center space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
                                                     <div className="shrink-0">
-                                                        <img className="h-24 w-24 max-w-full rounded-lg object-cover" src={`http://localhost:5000/Images/${item.image}`} alt={item.bagName} />
+                                                        <img className="h-24 w-24 max-w-full rounded-lg object-cover" src={`https://fs105-main.onrender.com/Images/${item.image}`} alt={item.bagName} />
                                                     </div>
 
                                                     <div className="relative flex flex-1 flex-col justify-center items-center">
