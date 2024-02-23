@@ -173,7 +173,7 @@ const Cart = () => {
     </svg>
 
     const deleteHandler = async (id) => {
-        const response = await fetch(`/api/cart/${id}`, {
+        const response = await fetch(`https://fs105-main.onrender.com/api/cart/${id}`, {
             method: "DELETE"
         })
 
