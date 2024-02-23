@@ -52,7 +52,8 @@ const SingleProduct = () => {
 
     if(!user){
       console.log("Please log in before add to wishlist")
-      setCartError("Please log in before add to wishlist")
+      return setCartError("Please log in before add to wishlist")
+      
     }
     console.log(product)
 
