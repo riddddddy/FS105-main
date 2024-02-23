@@ -3,7 +3,7 @@ import './style.css';
 import './index.css';
 import Login from './pages/Login';
 import Register from './pages/Register'
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';

@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
     console.log("it is working");
 
-    const response = await fetch('/api/messages/submitmessage', {
+    const response = await fetch('https://fs105-main.onrender.com/api/messages/submitmessage', {
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ enquirerEmail, enquirerName, subject, message })

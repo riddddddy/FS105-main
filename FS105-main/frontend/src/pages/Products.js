@@ -15,7 +15,7 @@ const Products = () => {
   useEffect(() => {
 
     const getProducts = async () => {
-      const response = await fetch('/api/products')
+      const response = await fetch('https://fs105-main.onrender.com/api/products')
       const data = await response.json()
       console.log(data)
       setHandbags(data)

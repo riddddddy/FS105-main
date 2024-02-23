@@ -23,7 +23,7 @@ const ResetPassword = () => {
         }
 
         try {
-            const response = await axios.patch('/api/users/reset-password', {
+            const response = await axios.patch('https://fs105-main.onrender.com/api/users/reset-password', {
                 token,
                 newPassword
             });

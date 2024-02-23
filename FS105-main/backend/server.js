@@ -107,7 +107,7 @@ app.post("/payment", async (req, res) => {
           currency: "sgd",
           product_data: {
             name: itemproduct.bagName,
-            images: [`http://localhost:5000/${itemproduct.image}`], // Use base 64 to work properly the image
+            images: [`https://fs105-main.onrender.com/${itemproduct.image}`], // Use base 64 to work properly the image
           },
           unit_amount: Math.round(itemproduct.priceTag * 100), // this is the amount
         },

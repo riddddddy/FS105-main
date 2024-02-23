@@ -28,7 +28,7 @@ const UpdateUser = () => {
   // Fetch user details function
   const fetchUserDetails = async () => {
     try {
-      const response = await fetch(`/api/users/${user_id}`);
+      const response = await fetch(`https://fs105-main.onrender.com/api/users/${user_id}`);
       const userData = await response.json();
       console.log(userData);
       setUserAccount(userData); // Set the state with the fetched user data
@@ -57,7 +57,7 @@ const UpdateUser = () => {
         postalCode: postalCode || userAccount[0]?.postalCode,
     }
 
-      const response = await fetch(`/api/users/update/${user_id}`, {
+      const response = await fetch(`https://fs105-main.onrender.com/api/users/update/${user_id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

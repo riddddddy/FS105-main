@@ -33,7 +33,7 @@ const CardItem = ({ item, index, isMobile }) => {
         }}
       >
         <figure>
-          <img src={`http://localhost:5000/Images/${item.image}`} alt={item.bagName} />
+          <img src={`https://fs105-main.onrender.com/Images/${item.image}`} alt={item.bagName} />
         </figure>
         <div className="card-body">
           <h2 className="card-title cursor default ">{item.bagName}</h2>

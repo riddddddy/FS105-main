@@ -18,7 +18,7 @@ const SingleProduct = () => {
     setLoading(true)
 
     try {
-      const product = await fetch(`/api/products/${bagName}`)
+      const product = await fetch(`https://fs105-main.onrender.com/api/products/${bagName}`)
       const json = await product.json()
 
       console.log(json)
@@ -71,7 +71,7 @@ const SingleProduct = () => {
       bagName: product.bagName
     }
 
-    const response = await fetch(`/api/wishlist/addwishlist/`, {
+    const response = await fetch(`https://fs105-main.onrender.com/api/wishlist/addwishlist/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -148,7 +148,7 @@ const SingleProduct = () => {
       quantity: 1
     }
 
-    const response = await fetch('/api/cart', {
+    const response = await fetch('https://fs105-main.onrender.com/api/cart', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

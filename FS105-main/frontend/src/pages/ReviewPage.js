@@ -18,7 +18,7 @@ const ReviewPage = () => {
 
     const fetchReviews = async () => {
         try {
-            const response = await axios.get(`/api/reviews/${bagName}`);
+            const response = await axios.get(`https://fs105-main.onrender.com//api/reviews/${bagName}`);
             setReviews(response.data);
         } catch (error) {
             console.error('Error fetching reviews:', error);
@@ -47,7 +47,7 @@ const ReviewPage = () => {
     // }
 
     try {
-        const response = await axios.post(`/api/reviews`, { user: userData, rating, comment, item: bagName });
+        const response = await axios.post(`https://fs105-main.onrender.com/api/reviews`, { user: userData, rating, comment, item: bagName });
         const responseData = response.data
         console.log(responseData)
         //fetchReviews();

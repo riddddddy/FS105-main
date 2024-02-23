@@ -49,7 +49,7 @@ const Upload = () => {
         // .catch(err => console.log(err))
 
 
-        const response = await fetch('/upload', {
+        const response = await fetch('https://fs105-main.onrender.com/upload', {
             method: "POST",
             body: formData,
 

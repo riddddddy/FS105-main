@@ -18,7 +18,7 @@ function Navbar() {
     window.location.href = "/";
     localStorage.removeItem("user");
 
-    const response = await fetch("/api/users/logout");
+    const response = await fetch("https://fs105-main.onrender.com/api/users/logout");
     const json = await response.json();
     console.log(json);
   };

@@ -69,7 +69,7 @@ const UserManagementPage = () => {
             postalCode: postalCode || user?.user.postalCode,
         }
 
-        const response = await fetch(`api/users/update/${user?.user._id}`, {
+        const response = await fetch(`https://fs105-main.onrender.com/api/users/update/${user?.user._id}`, {
             method: 'PATCH',
             body: JSON.stringify(data),
             headers: { 'Content-Type': 'application/json' },

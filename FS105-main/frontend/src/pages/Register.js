@@ -18,7 +18,7 @@ const Register = () => {
 
         console.log("it is working")
 
-        const response = await fetch('/api/users/register', {
+        const response = await fetch('https://fs105-main.onrender.com/api/users/register', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ firstName, lastName, address, city, province, postalCode, email, password, password1 })

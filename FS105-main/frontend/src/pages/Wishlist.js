@@ -24,7 +24,7 @@ const Wishlist = () => {
   useEffect(() => {
     const fetchWishlist = async () => {
       // const response = await fetch(`/api/wishlist?id=${user?.user._id}`, //this is using req.query. Below code is req.params
-      const response = await fetch(`/api/wishlist/${user?.user._id}`,
+      const response = await fetch(`https://fs105-main.onrender.com/api/wishlist/${user?.user._id}`,
 
         {
           method: 'GET',
@@ -60,7 +60,7 @@ const Wishlist = () => {
 
     console.log(e.currentTarget)
 
-    const response = await fetch(`/api/wishlist/${e.currentTarget.id}`, {
+    const response = await fetch(`https://fs105-main.onrender.com/api/wishlist/${e.currentTarget.id}`, {
       method: "DELETE",
 
     })
@@ -91,7 +91,7 @@ const Wishlist = () => {
         {wishlist.map(item => (
           <div key={item?._id} className="card bg-base-100 outline outline-1 outline-slate-200">
             <figure className="px-10 pt-10">
-              <img src={`http://localhost:5000/Images/${item?.image}`} alt="Shoes" className="rounded-xl" />
+              <img src={`https://fs105-main.onrender.com/Images/${item?.image}`} alt="Shoes" className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">{item?.bagName}</h2>
