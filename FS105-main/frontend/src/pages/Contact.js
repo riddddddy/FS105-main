@@ -76,7 +76,7 @@ const Contact = () => {
   }
 
     try {
-      const response = await axios.post('/api/subscribe', { email });
+      const response = await axios.post('https://fs105-main.onrender.com/api/subscribe', { email });
 
       const responseData = response.data;
     console.log(responseData);
