@@ -25,9 +25,9 @@ const app = express()
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!!!')
-// })
+app.get('/', (req, res) => {
+  res.send('Hello World!!!')
+})
 
 
 //neccessary to have if post and patch requests are needed fyi Rid
