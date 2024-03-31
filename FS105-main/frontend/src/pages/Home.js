@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { allData } from '../context/AppContext.js'
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import homeShopNow from "../images/home/home-shop-now.jpg"
 
 const AnimatHomeVariants = {
   offscreen: { scale: 1.25 },
@@ -84,7 +85,7 @@ const Home = () => {
             viewport={{ amount: 0.0}} className='overflow-hidden'>
         <motion.div 
             variants={AnimatHomeVariants}
-            className="hero min-h-screen relative scale-125" style={{backgroundImage: 'url(https://cdn.discordapp.com/attachments/1199688598123978762/1207562448996016159/sdfsdf.jpg?ex=65e0192b&is=65cda42b&hm=999e0197794a387df7544917f862394e5b8f48eab48749d816ab7cafd542f9a5&)'}}>
+            className="hero min-h-screen relative scale-125" style={{backgroundImage:`url(${homeShopNow})`}}>
           <div className="hero-overlay bg-opacity-0"></div>
           <div className="hero-content text-center text-base-100 sticky top-5">
             <motion.div className="mt-40"
